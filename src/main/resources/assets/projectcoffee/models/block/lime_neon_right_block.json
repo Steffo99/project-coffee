@@ -1,0 +1,24 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "black": "projectcoffee:block/full_black",
+        "line": "projectcoffee:block/lime_neon_right",
+        "left": "projectcoffee:block/lime_neon_left_side",
+        "right": "projectcoffee:block/lime_neon_right_side",
+        "particle": "projectcoffee:block/full_black"
+    },
+    "elements": [
+        {
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "texture": "#black", "cullface": "down" },
+                "up":    { "texture": "#line", "cullface": "up" },
+                "north": { "texture": "#left", "cullface": "north" },
+                "south": { "texture": "#right", "cullface": "south" },
+                "west":  { "texture": "#black", "cullface": "west" },
+                "east":  { "texture": "#black", "cullface": "east" }
+            }
+        }
+    ]
+}

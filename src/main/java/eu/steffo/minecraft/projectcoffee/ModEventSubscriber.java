@@ -46,7 +46,10 @@ public final class ModEventSubscriber {
     @SubscribeEvent
     public static void onRegisterBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
-            setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(1.0F)), "test_block")
+            setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(1.0F)), "test_block"),
+            setup(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(Float.POSITIVE_INFINITY)), "full_black_block"),
+            setup(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(Float.POSITIVE_INFINITY).lightValue(15)), "lime_neon_left_block"),
+            setup(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(Float.POSITIVE_INFINITY).lightValue(15)), "lime_neon_right_block")
         );
     }
 
