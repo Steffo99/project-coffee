@@ -1,4 +1,5 @@
 {
+    "itemGroup.projectcoffee": "Project Coffee",
     "item.projectcoffee.test": "Test",
-    "itemGroup.projectcoffee": "Project Coffee"
+    "block.projectcoffee.test_block": "Test Block"
 }
